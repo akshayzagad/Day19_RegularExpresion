@@ -5,7 +5,7 @@ public class RegularExpression {
         static Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=[^@#$%^&*+=]*[@#$%^&*+=][^@#$%^&*+=]*$).{8,}$");
         public static void main(String[] args)
         {
-            Matcher matcher = pattern.matcher("Akshayzagade62@");
+            Matcher matcher = pattern.matcher("Akshayzagade62@gmail.com");
             if(matcher.matches())
                 System.out.println(true);
             else
